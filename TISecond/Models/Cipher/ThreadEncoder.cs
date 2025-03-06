@@ -14,15 +14,16 @@ public class ThreadEncoder : IDisposable
 {
     private const int MinimumKeyLength = 24;
     private const int BlockSizeBytes = 3; // 24 бита
-    private readonly string _inputFilePath;
-    private readonly string _outputFilePath;
+    private readonly string? _inputFilePath;
+    private readonly string? _outputFilePath;
     private readonly BitArray _key;
     private readonly BlockingCollection<byte[]> _dataQueue = new();
-    private readonly List<string> _keyStages = [];
+    private readonly List<string> _keyStages = new();
+    private readonly List<byte[]> blocks = new();
     private bool _disposed;
     private uint _iteration = 1;
 
-    public ThreadEncoder(string key, string inputFilePath, string outputFilePath)
+    public ThreadEncoder(string key, string? inputFilePath, string? outputFilePath)
     {
         var validatedKey = ValidateKey(key);
         if (validatedKey.Length < MinimumKeyLength)
@@ -109,12 +110,12 @@ public class ThreadEncoder : IDisposable
         return ConvertToBytes(dataBits);
     }
 
-    private static string GetBitView(in BitArray bits)
+    private string GetBitView(in BitArray bits)
     {
         var sb = new StringBuilder(bits.Length * 8);
         foreach (var bit in bits)
         {
-            sb.Append((bool)bit ? '1' : '0');
+            sb.Append((bool)bit ? "1" : "0");
         }
         return sb.ToString();
     }
@@ -144,13 +145,9 @@ public class ThreadEncoder : IDisposable
         using var outputStream = File.OpenWrite(_outputFilePath);
         foreach (var block in _dataQueue.GetConsumingEnumerable(ct))
         {
+            blocks.Add(block);
             outputStream.Write(block, 0, block.Length);
         }
-    }
-
-    public List<string> GetKeyStages()
-    {
-        return _keyStages;
     }
     
     public void Dispose()
@@ -158,5 +155,27 @@ public class ThreadEncoder : IDisposable
         if (_disposed) return;
         _dataQueue.Dispose();
         _disposed = true;
+    }
+
+    public List<string> GetKeyStages()
+    {
+        return _keyStages;
+    }
+
+    public byte[] GetEncryptedData()
+    {
+        long size = 0;
+        foreach (var block in blocks)
+        {
+            size += block.Length;
+        }
+        
+        byte[] encryptedData = new byte[size];
+        int index = 0;
+        foreach (var item in blocks.SelectMany(block => block))
+        {
+            encryptedData[index++] = item;
+        }
+        return encryptedData;
     }
 }

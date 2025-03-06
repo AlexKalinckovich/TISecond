@@ -15,8 +15,8 @@ namespace TISecond.View;
 public partial class MainWindow
 {
     
-    private static string _inputFilePath;
-    private static string _outputFilePath;
+    private static string? _inputFilePath;
+    private static string? _outputFilePath;
     
     public MainWindow()
     {
@@ -64,14 +64,14 @@ public partial class MainWindow
         }
         return list;
     }
-    
     private void UpdatePath(TextBox textBox,ListView listView)
     {
         var inputFilePath = FileManager.GetFilePath();
-        var fileData = File.ReadAllText(inputFilePath);
-        Console.WriteLine(fileData.Length);
-        var fileDataList = GetFileDataText(fileData);
-        var bitsView = GetBitsView(Encoding.ASCII.GetBytes(fileData));
+        
+        if (inputFilePath == null) return;
+        
+        var fileDataList = GetFileDataText(File.ReadAllText(inputFilePath));
+        var bitsView = GetBitsView(File.ReadAllBytes(inputFilePath));
         OutputFileListView.ItemsSource = new ObservableCollection<string>();
         KeyViewer.ItemsSource = new ObservableCollection<string>();
         if (inputFilePath.Length > 0)
@@ -95,22 +95,26 @@ public partial class MainWindow
     private void OpenResultFileButtonClick(object sender, RoutedEventArgs e)
     {
         var outputFilePath = FileManager.GetFilePath();
-        OutputFilePath.Text = outputFilePath;
-        _outputFilePath = outputFilePath;
+        if (outputFilePath != null)
+        {
+            OutputFilePath.Text = outputFilePath;
+            _outputFilePath = outputFilePath;
+        }
     }
 
-    private void UpdateOutputView(string outputFilePath)
+    private void UpdateOutputView(string? outputFilePath, byte[] encryptedData)
     {
-        var fileDataText = File.ReadAllText(outputFilePath);
-        Console.WriteLine(fileDataText.Length);
-        var bitView = GetBitsView(Encoding.ASCII.GetBytes(fileDataText));
-        var fileDataList = GetFileDataText(fileDataText);
+        if (outputFilePath == null) return;
+
+        var bitView = GetBitsView(encryptedData);
+        
+        var fileDataList = GetFileDataText(File.ReadAllText(outputFilePath));
         var list = new List<string>();
         list.Add("Текстовое представление:");
         list.AddRange(fileDataList);
         list.Add("Битовое представление:");
         list.AddRange(bitView);
-        OutputFileListView.ItemsSource = new ObservableCollection<string?>(list!);   
+        OutputFileListView.ItemsSource = new ObservableCollection<string?>(list!);
     }
     
     private void StartProcessButtonClick(object sender, RoutedEventArgs e)
@@ -126,7 +130,7 @@ public partial class MainWindow
             );
             cipher.StartProcessing();
             KeyViewer.ItemsSource = new ObservableCollection<string>(cipher.GetKeyStages());
-            UpdateOutputView(_outputFilePath);
+            UpdateOutputView(_outputFilePath,cipher.GetEncryptedData());
             MessageManager.ShowSuccess("Шифрование завершено!");
         }
         catch (ArgumentException ex)

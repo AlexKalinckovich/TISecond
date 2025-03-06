@@ -6,7 +6,7 @@ namespace TISecond.Models;
 
 public static class FileManager
 {
-    public static string GetFilePath()
+    public static string? GetFilePath()
     {
         try
         {

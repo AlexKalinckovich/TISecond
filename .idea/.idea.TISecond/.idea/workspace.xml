@@ -11,33 +11,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TISecond/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TISecond/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/Models/Cipher/ThreadEncoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/Models/Cipher/ThreadEncoder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/Models/FileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/Models/FileManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.g.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond_MarkupCompile.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/ref/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/ref/TISecond.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/refint/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/refint/TISecond.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/TISecond.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/TISecond.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +50,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18ba87b21cbf48fdafa8fe28457a04b2f5a918/a6/48a1d4b6/TextBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58a1c21326af4c8089701b138cdc6a5047930/74/3281767d/BlockingCollection`1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -75,20 +60,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.TISecond.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.TISecond.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TISecond" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -122,34 +107,28 @@
       <workItem from="1740990636942" duration="35000" />
       <workItem from="1741246085886" duration="957000" />
       <workItem from="1741252877591" duration="4905000" />
-      <workItem from="1741258180622" duration="3898000" />
+      <workItem from="1741258180622" duration="5110000" />
+      <workItem from="1741278871877" duration="1471000" />
     </task>
+    <task id="LOCAL-00001" summary="-add KeyViewer">
+      <option name="closed" value="true" />
+      <created>1741262118587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741262118587</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TISecond/View/MainWindow.xaml.cs</url>
-          <line>105</line>
-          <properties documentPath="C:\Users\brota\RiderProjects\TISecond\TISecond\View\MainWindow.xaml.cs" containingFunctionPresentation="Method 'UpdateOutputView'">
-            <startOffsets>
-              <option value="3121" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3186" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="-add KeyViewer" />
+    <option name="LAST_COMMIT_MESSAGE" value="-add KeyViewer" />
   </component>
 </project>
