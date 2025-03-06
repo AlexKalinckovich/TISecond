@@ -12,7 +12,7 @@ public static class FileManager
         {
             var openFileDialog = new OpenFileDialog
             {
-                Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*", // Фильтр для текстовых файлов
+                Filter = "All files (*.*)|*.*", // Фильтр для текстовых файлов
                 Multiselect = false // Запрещаем выбор нескольких файлов
             };
 

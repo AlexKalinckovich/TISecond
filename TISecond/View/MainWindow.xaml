@@ -101,6 +101,17 @@
                       FontSize="14" 
                       FontStyle="Normal"
                       Click="StartProcessButtonClick"/>
+                <ListView x:Name="KeyViewer"
+                          Margin="10,5" 
+                          Background="White" 
+                          Height="300"
+                          BorderThickness="0"
+                          FontFamily="Times New Roman" 
+                          FontSize="14"
+                          VerticalAlignment="Center" 
+                          HorizontalAlignment="Stretch"
+                          ScrollViewer.VerticalScrollBarVisibility="Visible"
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
             </StackPanel>
         </Border>
 
@@ -132,7 +143,7 @@
                             FontSize="14"
                             VerticalAlignment="Top" 
                             HorizontalAlignment="Stretch"
-                            ScrollViewer.VerticalScrollBarVisibility="Auto"
+                            ScrollViewer.VerticalScrollBarVisibility="Visible"
                             ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
                 </StackPanel>
             </Border>
@@ -158,7 +169,7 @@
                             FontSize="14"
                             VerticalAlignment="Bottom" 
                             HorizontalAlignment="Stretch"
-                            ScrollViewer.VerticalScrollBarVisibility="Auto"
+                            ScrollViewer.VerticalScrollBarVisibility="Visible"
                             ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
                 </StackPanel>
             </Border>

@@ -1,4 +1,6 @@
 ﻿
+using System.Text;
+
 namespace TISecond.Models.Cipher;
 
 using System;
@@ -16,7 +18,9 @@ public class ThreadEncoder : IDisposable
     private readonly string _outputFilePath;
     private readonly BitArray _key;
     private readonly BlockingCollection<byte[]> _dataQueue = new();
+    private readonly List<string> _keyStages = [];
     private bool _disposed;
+    private uint _iteration = 1;
 
     public ThreadEncoder(string key, string inputFilePath, string outputFilePath)
     {
@@ -40,7 +44,6 @@ public class ThreadEncoder : IDisposable
         }
         _outputFilePath = outputFilePath;
 
-        StartProcessing();
     }
 
     private static string ValidateKey(string key)
@@ -48,7 +51,7 @@ public class ThreadEncoder : IDisposable
         return new string(key.Where(c => c is '0' or '1').ToArray());
     }
 
-    private void StartProcessing()
+    public void StartProcessing()
     {
         var cts = new CancellationTokenSource();
         
@@ -69,7 +72,6 @@ public class ThreadEncoder : IDisposable
             var buffer = new byte[BlockSizeBytes];
             int bytesRead;
             
-
             while ((bytesRead = inputStream.Read(buffer, 0, BlockSizeBytes)) > 0)
             {
                 if (bytesRead < BlockSizeBytes)
@@ -89,7 +91,7 @@ public class ThreadEncoder : IDisposable
             throw;
         }
     }
-
+    
     private byte[] ProcessBlock(byte[] data)
     {
         var dataBits = new BitArray(data);
@@ -100,18 +102,30 @@ public class ThreadEncoder : IDisposable
         {
             keyPart.Length = dataLength;
         }
-
+        
         // Применяем XOR
         dataBits.Xor(keyPart);
 
         return ConvertToBytes(dataBits);
     }
 
+    private static string GetBitView(in BitArray bits)
+    {
+        var sb = new StringBuilder(bits.Length * 8);
+        foreach (var bit in bits)
+        {
+            sb.Append((bool)bit ? '1' : '0');
+        }
+        return sb.ToString();
+    }
+    
     private void UpdateKey()
     {
+        _keyStages.Add($"On {_iteration} iteration key is {GetBitView(_key)}");
+        _iteration++;
         // Вычисляем обратную связь: 24 бит XOR 4 бит XOR 3 бит XOR 1 бит
         var feedback = _key[0] ^ _key[3] ^ _key[4] ^ _key[23];
-
+        
         _key.RightShift(1);
 
         // Устанавливаем новый бит на последнюю позицию
@@ -134,6 +148,11 @@ public class ThreadEncoder : IDisposable
         }
     }
 
+    public List<string> GetKeyStages()
+    {
+        return _keyStages;
+    }
+    
     public void Dispose()
     {
         if (_disposed) return;
