@@ -13,16 +13,6 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Stretch">
             <StackPanel Background="LightGray">
-                <!-- Переключатель режимов -->
-                <RadioButton Content="Шифровать" 
-                           GroupName="Mode" 
-                           IsChecked="True" 
-                           Name="EncryptMode" 
-                           Margin="10,20,0,0"/>
-                <RadioButton Content="Дешифровать" 
-                           GroupName="Mode" 
-                           Name="DecryptMode" 
-                           Margin="10,10,0,0"/>
 
                 <!-- Панель для ключа -->
                 <Label Content="Введите ключ:" 
@@ -116,64 +106,79 @@
         </Border>
 
         <!-- Правая панель с содержимым файлов -->
-        <Grid Margin="380,0,0,0">
+<Grid Margin="380,0,0,0">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="2*"/> <!-- 2/3 высоты под файл и ручной ввод -->
+        <RowDefinition Height="Auto"/> <!-- Для GridSplitter -->
+        <RowDefinition Height="*"/>  <!-- 1/3 под результат -->
+    </Grid.RowDefinitions>
+
+    <!-- Верхняя часть: исходные данные -->
+    <Grid Grid.Row="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>    <!-- TextBox -->
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок файлового представления -->
+        <Label Content="Текст исходного файла" 
+               Grid.Row="0"
+               Foreground="White" 
+               Background="Black"
+               Padding="5" 
+               FontFamily="Times New Roman" 
+               FontSize="16"/>
+
+        <!-- Поле для ручного ввода -->
+        <TextBox x:Name="ManualBitsInput"
+                  Grid.Row="1"
+                  Margin="10,2,10,5" 
+                  FontFamily="Consolas" 
+                  FontSize="14"
+                  AcceptsReturn="True"
+                  VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Auto"
+                  TextWrapping="Wrap"
+                  MaxLength="4096"/>
+    </Grid>
+
+    <!-- GridSplitter для изменения размера -->
+    <GridSplitter Grid.Row="1" 
+                  Height="5" 
+                  Background="Gray" 
+                  HorizontalAlignment="Stretch" 
+                  VerticalAlignment="Center" 
+                  />
+
+    <!-- Нижняя часть: выходной файл -->
+    <Border Grid.Row="2" 
+            BorderBrush="Black" 
+            BorderThickness="0,2,0,0">
+        <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <!-- Верхняя часть: исходный файл -->
-            <Border Grid.Row="0" 
-                  BorderBrush="Black" 
-                  BorderThickness="0,0,10,0">
-                <StackPanel>
-                    <Label Content="Текст исходного файла" 
-                         Foreground="White" 
-                         Background="Black"
-                         HorizontalAlignment="Stretch" 
-                         VerticalAlignment="Center"
-                         Padding="5" 
-                         FontFamily="Times New Roman" 
-                         FontSize="16"/>
-                    <ListView x:Name="InputFileListView"
-                            Margin="10,5" 
-                            Background="White" 
-                            BorderThickness="0"
-                            FontFamily="Times New Roman" 
-                            FontSize="14"
-                            VerticalAlignment="Top" 
-                            HorizontalAlignment="Stretch"
-                            ScrollViewer.VerticalScrollBarVisibility="Visible"
-                            ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
-                </StackPanel>
-            </Border>
+            <Label Content="Текст выходного файла" 
+                   Grid.Row="0"
+                   Foreground="White" 
+                   Background="Black"
+                   Padding="5" 
+                   FontFamily="Times New Roman" 
+                   FontSize="16"/>
 
-            <!-- Нижняя часть: выходной файл -->
-            <Border Grid.Row="1" 
-                  BorderBrush="Black" 
-                  BorderThickness="0,0,10,10">
-                <StackPanel>
-                    <Label Content="Текст выходного файла" 
-                         Foreground="White" 
-                         Background="Black"
-                         HorizontalAlignment="Stretch" 
-                         VerticalAlignment="Center"
-                         Padding="5" 
-                         FontFamily="Times New Roman" 
-                         FontSize="16"/>
-                    <ListView x:Name="OutputFileListView"
-                            Margin="10,5" 
-                            Background="White" 
-                            BorderThickness="0"
-                            FontFamily="Times New Roman" 
-                            FontSize="14"
-                            VerticalAlignment="Bottom" 
-                            HorizontalAlignment="Stretch"
-                            ScrollViewer.VerticalScrollBarVisibility="Visible"
-                            ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
-                </StackPanel>
-            </Border>
+            <ListView x:Name="OutputFileListView"
+                      Grid.Row="1"
+                      Margin="10,5" 
+                      Background="White" 
+                      FontFamily="Times New Roman" 
+                      FontSize="14"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
         </Grid>
+    </Border>
+</Grid>
     </Grid>
     
 </Window>

@@ -2,9 +2,9 @@
 
 namespace TISecond.Models;
 
-public class KeyValidator
+public static class KeyValidator
 {
-    public string ValidateKey(string key)
+    public static string ValidateKey(string key)
     {
         return new string(key.Where(c => c is '0' or '1').ToArray());
     }

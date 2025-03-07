@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.IO;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using TISecond.Models;
@@ -14,8 +12,6 @@ namespace TISecond.View;
 /// </summary>
 public partial class MainWindow
 {
-    
-    private static string? _inputFilePath;
     private static string? _outputFilePath;
     
     public MainWindow()
@@ -24,72 +20,35 @@ public partial class MainWindow
     }
 
 
-    private static List<string> GetBitsView(in byte[] buffer)
-    {
-        var bits = new BitArray(buffer);
-        var sb = new StringBuilder(bits.Length);
-        foreach (var bit in bits)
-        {
-            sb.Append((bool)bit ? "1" : "0");
-        }
-        var bitData = sb.ToString();
-        var list = new List<string>(bitData.Length / 100);
-        for (int i = 0; i < bitData.Length; i += 100)
-        {
-            if (i + 100 <= bitData.Length)
-            {
-                list.Add(bitData.Substring(i, 100)); 
-            }
-            else
-            {
-                list.Add(bitData[i..]); 
-            }
-        }
-        return list;
-    }
-
     private static List<string> GetFileDataText(string fileData)
     {
-        var list = new List<string>(fileData.Length / 100);
-        for (int i = 0; i < fileData.Length; i += 100)
+        var list = new List<string>(fileData.Length / 200);
+        for (int i = 0; i < fileData.Length; i += 200)
         {
-            if (i + 100 <= fileData.Length)
-            {
-                list.Add(fileData.Substring(i, 100)); 
-            }
-            else
-            {
-                list.Add(fileData[i..]); 
-            }
+            list.Add(i + 200 <= fileData.Length ? fileData.Substring(i, 100) : fileData[i..]);
         }
         return list;
     }
-    private void UpdatePath(TextBox textBox,ListView listView)
+    private void UpdatePath(TextBox textBox,TextBox listView)
     {
         var inputFilePath = FileManager.GetFilePath();
         
-        if (inputFilePath == null) return;
+        if (string.IsNullOrEmpty(inputFilePath)) return;
         
         var fileDataList = GetFileDataText(File.ReadAllText(inputFilePath));
-        var bitsView = GetBitsView(File.ReadAllBytes(inputFilePath));
         OutputFileListView.ItemsSource = new ObservableCollection<string>();
         KeyViewer.ItemsSource = new ObservableCollection<string>();
         if (inputFilePath.Length > 0)
         {
-            var list = new List<string>();
+            var list = new List<string>(fileDataList);
             textBox.Text = inputFilePath;
-            _inputFilePath = inputFilePath;
-            list.Add("Текстовое представление:");
-            list.AddRange(fileDataList);
-            list.Add("Битовое представление:");
-            list.AddRange(bitsView);
-            listView.ItemsSource = new ObservableCollection<string>(list);
+            listView.Text = string.Join("",list);
         }
     }
     
     private void OpenCipherFileButtonClick(object sender, RoutedEventArgs e)
     {
-        UpdatePath(InputFilePath,InputFileListView);
+        UpdatePath(InputFilePath,ManualBitsInput);
     }
 
     private void OpenResultFileButtonClick(object sender, RoutedEventArgs e)
@@ -102,48 +61,38 @@ public partial class MainWindow
         }
     }
 
-    private void UpdateOutputView(string? outputFilePath, byte[] encryptedData)
+    private void UpdateOutputView(string? outputFilePath, string encryptedData,List<string> keyStages)
     {
-        if (outputFilePath == null) return;
-
-        var bitView = GetBitsView(encryptedData);
-        
-        var fileDataList = GetFileDataText(File.ReadAllText(outputFilePath));
-        var list = new List<string>();
-        list.Add("Текстовое представление:");
-        list.AddRange(fileDataList);
-        list.Add("Битовое представление:");
-        list.AddRange(bitView);
+        if (outputFilePath == null || encryptedData.Length == 0) return;
+        var list = new List<string> { encryptedData };
         OutputFileListView.ItemsSource = new ObservableCollection<string?>(list!);
+        KeyViewer.ItemsSource = new ObservableCollection<string?>(keyStages!);
     }
     
     private void StartProcessButtonClick(object sender, RoutedEventArgs e)
     {
-        if (!ValidateInputs()) return;
-        KeyViewer.ItemsSource = new ObservableCollection<string>();
+        if (_outputFilePath == null || !ValidateInputs()) return;
+
+        var bitString = ManualBitsInput.Text;
         try
         {
+            
             using var cipher = new ThreadEncoder(
-                KeyInput.Text, 
-                _inputFilePath, 
+                KeyInput.Text,
+                bitString,
                 _outputFilePath
             );
+
             cipher.StartProcessing();
-            KeyViewer.ItemsSource = new ObservableCollection<string>(cipher.GetKeyStages());
-            UpdateOutputView(_outputFilePath,cipher.GetEncryptedData());
-            MessageManager.ShowSuccess("Шифрование завершено!");
+            UpdateOutputView(_outputFilePath,cipher.GetEncryptedBytes(),cipher.GetKeyStages());
         }
         catch (ArgumentException ex)
         {
-            MessageManager.ShowError($"Ошибка ключа: {ex.Message}");
-        }
-        catch (FileNotFoundException ex)
-        {
-            MessageManager.ShowError($"Файл не найден: {ex.FileName}");
+            MessageManager.ShowError(ex.Message);
         }
         catch (IOException ex)
         {
-            MessageManager.ShowError($"Ошибка ввода-вывода: {ex.Message}");
+            MessageManager.ShowError(ex.Message);
         }
     }
 
@@ -160,7 +109,7 @@ public partial class MainWindow
     {
         var isDifferent = IsDifferentPath(inputFilePath:InputFilePath.Text,outputFilePath:OutputFilePath.Text);
         return isDifferent && !string.IsNullOrWhiteSpace(KeyInput.Text) 
-               && !string.IsNullOrWhiteSpace(InputFilePath.Text)
+               && !string.IsNullOrWhiteSpace(ManualBitsInput.Text)
                && !string.IsNullOrWhiteSpace(OutputFilePath.Text);
     }
 }

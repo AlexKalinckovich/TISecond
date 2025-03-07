@@ -1,64 +1,59 @@
-﻿
-using System.Text;
-
-namespace TISecond.Models.Cipher;
-
-using System;
+﻿using System.Text;
 using System.Collections;
 using System.Collections.Concurrent;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+
+namespace TISecond.Models.Cipher;
 
 public class ThreadEncoder : IDisposable
 {
     private const int MinimumKeyLength = 24;
-    private const int BlockSizeBytes = 3; // 24 бита
-    private readonly string? _inputFilePath;
-    private readonly string? _outputFilePath;
+    private const int BlockSizeBits = 24;
     private readonly BitArray _key;
-    private readonly BlockingCollection<byte[]> _dataQueue = new();
-    private readonly List<string> _keyStages = new();
-    private readonly List<byte[]> blocks = new();
+    private readonly BlockingCollection<BitArray> _dataQueue = new();
+    private readonly List<string> _keyStages = [];
+    private readonly List<string> _encryptedBlocks = [];
+    private readonly int _originalBitCount;
     private bool _disposed;
     private uint _iteration = 1;
 
-    public ThreadEncoder(string key, string? inputFilePath, string? outputFilePath)
+    public ThreadEncoder(string key, string bitString, string outputFilePath)
     {
-        var validatedKey = ValidateKey(key);
+        // Валидация ключа
+        var validatedKey = KeyValidator.ValidateKey(key);
         if (validatedKey.Length < MinimumKeyLength)
             throw new ArgumentException($"Ключ должен содержать минимум {MinimumKeyLength} бит.");
-        
+
         _key = new BitArray(validatedKey.Select(c => c == '1').ToArray());
-
-        if (!File.Exists(inputFilePath))
-            throw new FileNotFoundException("Входной файл не найден.", inputFilePath);
-        _inputFilePath = inputFilePath;
-
-        try
+        OutputFilePath = outputFilePath;
+        
+        bitString = KeyValidator.ValidateKey(bitString);
+        
+        _originalBitCount = bitString.Length;
+        if (_originalBitCount == 0)
         {
-            File.WriteAllText(outputFilePath, string.Empty); // Создаем/очищаем файл
+            throw new ArgumentException("Текст пустой или полностью состоит из некорректных символов.");
         }
-        catch
-        {
-            throw new IOException("Невозможно записать в выходной файл.");
-        }
-        _outputFilePath = outputFilePath;
+        
+        var inputBits = new BitArray(_originalBitCount);
+        for (var i = 0; i < _originalBitCount; i++)
+            inputBits[i] = bitString[i] == '1';
 
+        SourceBits = inputBits;
     }
 
-    private static string ValidateKey(string key)
-    {
-        return new string(key.Where(c => c is '0' or '1').ToArray());
-    }
+    private string OutputFilePath { get; }
+    private BitArray SourceBits { get; }
 
     public void StartProcessing()
     {
+        if(_originalBitCount == 0) return;
+        
         var cts = new CancellationTokenSource();
         
         var processingTasks = new[]
         {
-            Task.Run(() => ReadAndEncrypt(cts.Token), cts.Token), 
+            Task.Run(() => ReadAndEncrypt(cts.Token), cts.Token),
             Task.Run(() => WriteEncryptedData(cts.Token), cts.Token)
         };
 
@@ -69,20 +64,20 @@ public class ThreadEncoder : IDisposable
     {
         try
         {
-            using var inputStream = File.OpenRead(_inputFilePath);
-            var buffer = new byte[BlockSizeBytes];
-            int bytesRead;
-            
-            while ((bytesRead = inputStream.Read(buffer, 0, BlockSizeBytes)) > 0)
+            var position = 0;
+            while (position < _originalBitCount)
             {
-                if (bytesRead < BlockSizeBytes)
-                    Array.Resize(ref buffer, bytesRead);
+                var bitsToProcess = Math.Min(BlockSizeBits, _originalBitCount - position);
+                var block = new BitArray(bitsToProcess);
+                
+                for (var i = 0; i < bitsToProcess; i++)
+                    block[i] = SourceBits[position + i];
 
-                var encryptedBlock = ProcessBlock(buffer);
+                var encryptedBlock = ProcessBlock(block);
                 _dataQueue.Add(encryptedBlock, ct);
-
+                
+                position += bitsToProcess;
                 UpdateKey();
-                buffer = new byte[BlockSizeBytes]; // Сброс буфера
             }
             _dataQueue.CompleteAdding();
         }
@@ -92,64 +87,64 @@ public class ThreadEncoder : IDisposable
             throw;
         }
     }
-    
-    private byte[] ProcessBlock(byte[] data)
+
+    private BitArray ProcessBlock(BitArray block)
     {
-        var dataBits = new BitArray(data);
-        var dataLength = dataBits.Length;
-        
         var keyPart = new BitArray(_key);
-        if (dataLength < _key.Length)
-        {
-            keyPart.Length = dataLength;
-        }
-        
-        // Применяем XOR
-        dataBits.Xor(keyPart);
+        if (block.Length < _key.Length)
+            keyPart.Length = block.Length;
 
-        return ConvertToBytes(dataBits);
+        block.Xor(keyPart);
+        return block;
     }
 
-    private string GetBitView(in BitArray bits)
-    {
-        var sb = new StringBuilder(bits.Length * 8);
-        foreach (var bit in bits)
-        {
-            sb.Append((bool)bit ? "1" : "0");
-        }
-        return sb.ToString();
-    }
-    
     private void UpdateKey()
     {
-        _keyStages.Add($"On {_iteration} iteration key is {GetBitView(_key)}");
-        _iteration++;
-        // Вычисляем обратную связь: 24 бит XOR 4 бит XOR 3 бит XOR 1 бит
+        // Логика обновления ключа
         var feedback = _key[0] ^ _key[3] ^ _key[4] ^ _key[23];
-        
         _key.RightShift(1);
-
-        // Устанавливаем новый бит на последнюю позицию
         _key[^1] = feedback;
+
+        _keyStages.Add($"Итерация {_iteration}: {GetBitView(_key)}");
+        _iteration++;
+    }
+
+    private void WriteEncryptedData(CancellationToken ct)
+    {
+        using var fs = new FileStream(OutputFilePath, FileMode.Create);
+        using var bw = new BinaryWriter(fs);
+        var sb = new StringBuilder();
+        foreach (var block in _dataQueue.GetConsumingEnumerable(ct))
+        {
+            foreach (var bit in block)
+            {
+                sb.Append((bool)bit ? "1" : "0");
+            }
+            
+            var str = sb.ToString();
+            _encryptedBlocks.Add(str);
+
+            bw.Write(str);
+            sb.Clear();
+        }
+    }
+
+    public string GetEncryptedBytes()
+    {
+        return string.Join("", _encryptedBlocks);
     }
 
     private static byte[] ConvertToBytes(BitArray bits)
     {
+        if(bits.Length == 0) return [];
+        
         var bytes = new byte[(bits.Length + 7) / 8];
         bits.CopyTo(bytes, 0);
         return bytes;
     }
 
-    private void WriteEncryptedData(CancellationToken ct)
-    {
-        using var outputStream = File.OpenWrite(_outputFilePath);
-        foreach (var block in _dataQueue.GetConsumingEnumerable(ct))
-        {
-            blocks.Add(block);
-            outputStream.Write(block, 0, block.Length);
-        }
-    }
-    
+    public List<string> GetKeyStages() => _keyStages;
+
     public void Dispose()
     {
         if (_disposed) return;
@@ -157,25 +152,11 @@ public class ThreadEncoder : IDisposable
         _disposed = true;
     }
 
-    public List<string> GetKeyStages()
+    private static string GetBitView(BitArray bits)
     {
-        return _keyStages;
-    }
-
-    public byte[] GetEncryptedData()
-    {
-        long size = 0;
-        foreach (var block in blocks)
-        {
-            size += block.Length;
-        }
-        
-        byte[] encryptedData = new byte[size];
-        int index = 0;
-        foreach (var item in blocks.SelectMany(block => block))
-        {
-            encryptedData[index++] = item;
-        }
-        return encryptedData;
+        var sb = new StringBuilder(bits.Length);
+        foreach (bool bit in bits)
+            sb.Append(bit ? "1" : "0");
+        return sb.ToString();
     }
 }
