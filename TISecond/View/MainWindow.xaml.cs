@@ -22,10 +22,10 @@ public partial class MainWindow
 
     private static List<string> GetFileDataText(string fileData)
     {
-        var list = new List<string>(fileData.Length / 200);
-        for (int i = 0; i < fileData.Length; i += 200)
+        var list = new List<string>(fileData.Length / 100);
+        for (int i = 0; i < fileData.Length; i += 100)
         {
-            list.Add(i + 200 <= fileData.Length ? fileData.Substring(i, 100) : fileData[i..]);
+            list.Add(i + 100 <= fileData.Length ? fileData.Substring(i, 100) : fileData[i..]);
         }
         return list;
     }

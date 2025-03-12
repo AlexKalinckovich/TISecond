@@ -9,9 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a951c172-ac0c-4822-acf7-5d03a3680bb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TISecond/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TISecond/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/Models/Cipher/ThreadEncoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/Models/Cipher/ThreadEncoder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/Models/KeyValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/Models/KeyValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.exe" afterDir="false" />
@@ -19,10 +16,7 @@
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.g.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/ref/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/ref/TISecond.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/refint/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/refint/TISecond.dll" afterDir="false" />
@@ -64,20 +58,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.TISecond.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.TISecond.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TISecond" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -114,7 +108,8 @@
       <workItem from="1741258180622" duration="5110000" />
       <workItem from="1741278871877" duration="2092000" />
       <workItem from="1741284968004" duration="5055000" />
-      <workItem from="1741333335138" duration="2524000" />
+      <workItem from="1741333335138" duration="4194000" />
+      <workItem from="1741342884208" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="-add KeyViewer">
       <option name="closed" value="true" />
@@ -132,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741280459114</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-Fix bits view&#10;-Delete outputFileView">
+      <option name="closed" value="true" />
+      <created>1741335928025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741335928025</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +147,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="-add KeyViewer" />
     <MESSAGE value="-fix bytes encryption" />
-    <option name="LAST_COMMIT_MESSAGE" value="-fix bytes encryption" />
+    <MESSAGE value="-Fix bits view&#10;-Delete outputFileView" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Fix bits view&#10;-Delete outputFileView" />
   </component>
 </project>
