@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brota\\RiderProjects\\TISecond\\TISecond\\TISecond.csproj": {}
+    "E:\\RiderProjects\\TISecond\\TISecond\\TISecond.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brota\\RiderProjects\\TISecond\\TISecond\\TISecond.csproj": {
+    "E:\\RiderProjects\\TISecond\\TISecond\\TISecond.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brota\\RiderProjects\\TISecond\\TISecond\\TISecond.csproj",
+        "projectUniqueName": "E:\\RiderProjects\\TISecond\\TISecond\\TISecond.csproj",
         "projectName": "TISecond",
-        "projectPath": "C:\\Users\\brota\\RiderProjects\\TISecond\\TISecond\\TISecond.csproj",
+        "projectPath": "E:\\RiderProjects\\TISecond\\TISecond\\TISecond.csproj",
         "packagesPath": "C:\\Users\\brota\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brota\\RiderProjects\\TISecond\\TISecond\\obj\\",
+        "outputPath": "E:\\RiderProjects\\TISecond\\TISecond\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brota\\AppData\\Roaming\\NuGet\\NuGet.Config"

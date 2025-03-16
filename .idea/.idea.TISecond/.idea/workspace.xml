@@ -7,19 +7,481 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a951c172-ac0c-4822-acf7-5d03a3680bb9" name="Changes" comment="">
+    <list default="true" id="a951c172-ac0c-4822-acf7-5d03a3680bb9" name="Changes" comment="-fix lab">
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/PublishOutputs.bf8550da2d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.g.resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/TISecond_MarkupCompile.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/View/App.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/View/MainWindow.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/View/MainWindow.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/apphost.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/ref/TISecond.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/refint/TISecond.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/PublishOutputs.99f1e1bfd3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.csproj.Up2Date" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.g.resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.genbundle.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.genpublishdeps.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/TISecond_MarkupCompile.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/View/App.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/View/MainWindow.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/View/MainWindow.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/apphost.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/ref/TISecond.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/refint/TISecond.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/singlefilehost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TISecond/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TISecond/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Models/Cipher/ThreadEncoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/Models/Cipher/ThreadEncoder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Models/KeyValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/Models/KeyValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/View/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/bin/Debug/net9.0-windows/TISecond.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/TISecond_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/ref/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/ref/TISecond.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/refint/TISecond.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/refint/TISecond.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/TISecond.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/TISecond.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TISecond/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/Exel Lab2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/TI lab2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/Accessibility.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/D3DCompiler_47_cor3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/DirectWriteForwarder.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/Microsoft.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/Microsoft.DiaSymReader.Native.amd64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/Microsoft.VisualBasic.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/Microsoft.VisualBasic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/Microsoft.Win32.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/Microsoft.Win32.Registry.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/Microsoft.Win32.Registry.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PenImc_cor3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework-SystemCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework-SystemData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework-SystemDrawing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework-SystemXml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework-SystemXmlLinq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework.Aero.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework.Aero2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework.AeroLite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework.Classic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework.Fluent.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework.Luna.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework.Royale.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationNative_cor3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/PresentationUI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ReachFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.AppContext.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.CodeDom.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Collections.Concurrent.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Collections.Immutable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Collections.NonGeneric.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Collections.Specialized.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Collections.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ComponentModel.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ComponentModel.DataAnnotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ComponentModel.EventBasedAsync.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ComponentModel.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ComponentModel.TypeConverter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ComponentModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Console.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Data.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Data.DataSetExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Data.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.Contracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.Debug.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.EventLog.Messages.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.EventLog.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.FileVersionInfo.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.PerformanceCounter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.Process.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.StackTrace.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.TextWriterTraceListener.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.Tools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.TraceSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Diagnostics.Tracing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.DirectoryServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Drawing.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Drawing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Dynamic.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Formats.Asn1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Formats.Nrbf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Formats.Tar.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Globalization.Calendars.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Globalization.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Globalization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.Compression.Brotli.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.Compression.FileSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.Compression.Native.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.Compression.ZipFile.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.Compression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.FileSystem.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.FileSystem.DriveInfo.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.FileSystem.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.FileSystem.Watcher.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.FileSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.IsolatedStorage.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.MemoryMappedFiles.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.Packaging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.Pipelines.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.Pipes.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.Pipes.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.UnmanagedMemoryStream.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.IO.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Linq.Expressions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Linq.Parallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Linq.Queryable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.Http.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.HttpListener.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.Mail.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.NameResolution.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.NetworkInformation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.Ping.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.Quic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.Requests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.ServicePoint.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.Sockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.WebClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.WebHeaderCollection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.WebProxy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.WebSockets.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.WebSockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Numerics.Vectors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ObjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Printing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Private.CoreLib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Private.DataContractSerialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Private.Uri.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Private.Xml.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Private.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Reflection.DispatchProxy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Reflection.Emit.ILGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Reflection.Emit.Lightweight.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Reflection.Emit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Reflection.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Reflection.Metadata.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Reflection.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Reflection.TypeExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Reflection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Resources.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Resources.Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Resources.ResourceManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Resources.Writer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.CompilerServices.VisualC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Handles.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.InteropServices.JavaScript.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.InteropServices.RuntimeInformation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.InteropServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Intrinsics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Loader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Serialization.Formatters.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Serialization.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Serialization.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Serialization.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Claims.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.Algorithms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.Cng.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.Csp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.Encoding.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.OpenSsl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.Pkcs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.X509Certificates.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Cryptography.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Permissions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Principal.Windows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.Principal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.SecureString.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ServiceModel.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ServiceProcess.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Text.Encoding.CodePages.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Text.Encoding.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Text.Encoding.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Text.Encodings.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Text.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Text.RegularExpressions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.Channels.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.Overlapped.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.Tasks.Dataflow.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.Tasks.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.Tasks.Parallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.Tasks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.Thread.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.ThreadPool.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.Timer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Threading.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Transactions.Local.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Transactions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.ValueTuple.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Web.HttpUtility.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Windows.Controls.Ribbon.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Windows.Input.Manipulations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Windows.Presentation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Windows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xaml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xml.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xml.ReaderWriter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xml.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xml.XDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xml.XPath.XDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xml.XPath.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xml.XmlDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xml.XmlSerializer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/System.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/TISecond.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/TISecond.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/TISecond.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/TISecond.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/TISecond.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/UIAutomationClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/UIAutomationClientSideProviders.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/UIAutomationProvider.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/UIAutomationTypes.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/WindowsBase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/clretwrc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/clrgc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/clrgcexp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/clrjit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/coreclr.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/createdump.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/cs/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/de/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/es/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/fr/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/hostfxr.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/hostpolicy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/it/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ja/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ko/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/mscordaccore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/mscordaccore_amd64_amd64_9.0.225.6610.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/mscordbi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/mscorlib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/mscorrc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/msquic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/netstandard.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pl/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/pt-BR/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/ru/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/tr/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/vcruntime140_cor3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/wpfgfx_cor3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hans/WindowsBase.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/PresentationCore.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/PresentationFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/PresentationUI.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/ReachFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/System.Windows.Controls.Ribbon.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/System.Windows.Input.Manipulations.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/System.Xaml.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/UIAutomationClient.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/UIAutomationClientSideProviders.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/UIAutomationProvider.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/UIAutomationTypes.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TISecond/Отчет/publish/zh-Hant/WindowsBase.resources.dll" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +500,19 @@
     &quot;assignee&quot;: &quot;AlexKalinckovich&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AlexKalinckovich/TISecond.git&quot;,
-    &quot;accountId&quot;: &quot;920d9e16-fa17-4989-a6c5-fa402afbec58&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AlexKalinckovich/TISecond.git",
+    "accountId": "40894bcb-e9ab-4a30-a67b-4f945696b897"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18ba87b21cbf48fdafa8fe28457a04b2f5a918/a6/48a1d4b6/TextBox.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58a1c21326af4c8089701b138cdc6a5047930/74/3281767d/BlockingCollection`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/RiderProjects/TISecond/TISecond/Models/KeyValidator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/RiderProjects/TISecond/TISecond/View/MainWindow.xaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/RiderProjects/TISecond/TISecond/View/MainWindow.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/RiderProjects/TISecond/TISecond/obj/Debug/net9.0-windows/View/MainWindow.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TISecond/obj/Debug/net9.0-windows/View/MainWindow.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TISecond/obj/Release/net9.0-windows/win-x64/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -110,6 +576,7 @@
       <workItem from="1741284968004" duration="5055000" />
       <workItem from="1741333335138" duration="4194000" />
       <workItem from="1741342884208" duration="1065000" />
+      <workItem from="1742148682587" duration="448000" />
     </task>
     <task id="LOCAL-00001" summary="-add KeyViewer">
       <option name="closed" value="true" />
@@ -135,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741335928025</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-fix lab">
+      <option name="closed" value="true" />
+      <created>1742149092369</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742149092369</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +623,7 @@
     <MESSAGE value="-add KeyViewer" />
     <MESSAGE value="-fix bytes encryption" />
     <MESSAGE value="-Fix bits view&#10;-Delete outputFileView" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Fix bits view&#10;-Delete outputFileView" />
+    <MESSAGE value="-fix lab" />
+    <option name="LAST_COMMIT_MESSAGE" value="-fix lab" />
   </component>
 </project>
