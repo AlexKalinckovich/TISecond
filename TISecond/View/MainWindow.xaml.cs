@@ -1,5 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections;
+using System.Collections.ObjectModel;
 using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using TISecond.Models;
@@ -12,6 +14,8 @@ namespace TISecond.View;
 /// </summary>
 public partial class MainWindow
 {
+    
+    private static string? _inputFilePath;
     private static string? _outputFilePath;
     
     public MainWindow()
@@ -20,79 +24,108 @@ public partial class MainWindow
     }
 
 
-    private static List<string> GetFileDataText(string fileData)
+    private static List<string> GetBitsView(in byte[] buffer)
     {
-        var list = new List<string>(fileData.Length / 100);
-        for (int i = 0; i < fileData.Length; i += 100)
+        var trimmedBuffer = buffer.Length > 300 ? buffer.Take(300).ToArray() : buffer;
+
+        var bits = new BitArray(trimmedBuffer);
+        var sb = new StringBuilder(bits.Length);
+
+        foreach (var bit in bits)
         {
-            list.Add(i + 100 <= fileData.Length ? fileData.Substring(i, 100) : fileData[i..]);
+            sb.Append((bool)bit ? "1" : "0");
         }
+
+        var bitData = sb.ToString();
+        var list = new List<string>(bitData.Length / 150);
+
+        for (int i = 0; i < bitData.Length; i += 150)
+        {
+            if (i + 150 <= bitData.Length)
+            {
+                list.Add(bitData.Substring(i, 150));
+            }
+            else
+            {
+                list.Add(bitData[i..]);
+            }
+        }
+
         return list;
     }
-    private void UpdatePath(TextBox textBox,TextBox listView)
+
+    private void UpdatePath(TextBox textBox,ListView listView)
     {
         var inputFilePath = FileManager.GetFilePath();
         
-        if (string.IsNullOrEmpty(inputFilePath)) return;
+        if (inputFilePath == null) return;
         
-        var fileDataList = GetFileDataText(File.ReadAllText(inputFilePath));
+        var bitsView = GetBitsView(File.ReadAllBytes(inputFilePath));
         OutputFileListView.ItemsSource = new ObservableCollection<string>();
         KeyViewer.ItemsSource = new ObservableCollection<string>();
         if (inputFilePath.Length > 0)
         {
-            var list = new List<string>(fileDataList);
+            var list = new List<string>();
             textBox.Text = inputFilePath;
-            listView.Text = string.Join("",list);
+            _inputFilePath = inputFilePath;
+            list.AddRange(bitsView);
+            listView.ItemsSource = new ObservableCollection<string>(list);
         }
     }
     
     private void OpenCipherFileButtonClick(object sender, RoutedEventArgs e)
     {
-        UpdatePath(InputFilePath,ManualBitsInput);
+        UpdatePath(InputFilePath,InputFileListView);
     }
 
     private void OpenResultFileButtonClick(object sender, RoutedEventArgs e)
     {
         var outputFilePath = FileManager.GetFilePath();
-        if (outputFilePath != null)
+        if (!string.IsNullOrEmpty(outputFilePath))
         {
             OutputFilePath.Text = outputFilePath;
             _outputFilePath = outputFilePath;
         }
     }
 
-    private void UpdateOutputView(string? outputFilePath, string encryptedData,List<string> keyStages)
+    private void UpdateOutputView(string? outputFilePath, byte[] encryptedData)
     {
-        if (outputFilePath == null || encryptedData.Length == 0) return;
-        var list = new List<string> { encryptedData };
+        if (string.IsNullOrEmpty(outputFilePath)) return;
+
+        var bitView = GetBitsView(encryptedData);
+        
+        var list = new List<string>();
+        list.AddRange(bitView);
         OutputFileListView.ItemsSource = new ObservableCollection<string?>(list!);
-        KeyViewer.ItemsSource = new ObservableCollection<string?>(keyStages!);
     }
     
     private void StartProcessButtonClick(object sender, RoutedEventArgs e)
     {
-        if (_outputFilePath == null || !ValidateInputs()) return;
-
-        var bitString = ManualBitsInput.Text;
+        if (!ValidateInputs()) return;
+        KeyViewer.ItemsSource = new ObservableCollection<string>();
         try
         {
-            
             using var cipher = new ThreadEncoder(
-                KeyInput.Text,
-                bitString,
+                KeyInput.Text, 
+                _inputFilePath, 
                 _outputFilePath
             );
-
             cipher.StartProcessing();
-            UpdateOutputView(_outputFilePath,cipher.GetEncryptedBytes(),cipher.GetKeyStages());
+            KeyViewer.ItemsSource = new ObservableCollection<string>(cipher.GetKeyStages());
+            UpdateOutputView(_outputFilePath,cipher.GetEncryptedData());
+            MessageManager.ShowSuccess("Шифрование завершено!");
         }
         catch (ArgumentException ex)
         {
-            MessageManager.ShowError(ex.Message);
+            MessageManager.ShowError($"Ошибка ключа: {ex.Message}");
+        }
+        catch (FileNotFoundException ex)
+        {
+            MessageManager.ShowError($"Файл не найден: {ex.FileName}");
         }
         catch (IOException ex)
         {
-            MessageManager.ShowError(ex.Message);
+            MessageManager.ShowError($"Ошибка ввода-вывода: {ex.Message}");
         }
     }
 
@@ -109,7 +142,7 @@ public partial class MainWindow
     {
         var isDifferent = IsDifferentPath(inputFilePath:InputFilePath.Text,outputFilePath:OutputFilePath.Text);
         return isDifferent && !string.IsNullOrWhiteSpace(KeyInput.Text) 
-               && !string.IsNullOrWhiteSpace(ManualBitsInput.Text)
+               && !string.IsNullOrWhiteSpace(InputFilePath.Text)
                && !string.IsNullOrWhiteSpace(OutputFilePath.Text);
     }
 }
