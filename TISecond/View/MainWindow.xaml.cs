@@ -58,7 +58,7 @@ public partial class MainWindow
     {
         var inputFilePath = FileManager.GetFilePath();
         
-        if (inputFilePath == null) return;
+        if (string.IsNullOrEmpty(inputFilePath)) return;
         
         var bitsView = GetBitsView(File.ReadAllBytes(inputFilePath));
         OutputFileListView.ItemsSource = new ObservableCollection<string>();
